@@ -1,0 +1,1143 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20253.25.1210.1815                               -->
+<workbook original-version='18.1' source-build='2025.3.1 (20253.25.1210.1815)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='daikibo-telemetry-data' inline='true' name='federated.0mnown70djgvdd1e2y4h80dqchxz' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='daikibo-telemetry-data' name='semistructpassivestore-direct.1qhe7cs1xhn0lt12nedqh1pt35fd'>
+            <connection class='semistructpassivestore-direct' directory='C:/Users/User/Downloads/daikibo-telemetry-data.json' filename='daikibo-telemetry-data.json' password='' server=''>
+              <semistruct-schemas>
+                <semistruct-schema table='[daikibo-telemetry-data.json]'>
+                  <map key='data' value='true' />
+                  <map key='location' value='true' />
+                  <map key='{root}' value='true' />
+                </semistruct-schema>
+              </semistruct-schemas>
+            </connection>
+          </named-connection>
+        </named-connections>
+        <relation connection='semistructpassivestore-direct.1qhe7cs1xhn0lt12nedqh1pt35fd' name='daikibo-telemetry-data.json' table='[daikibo-telemetry-data.json]' type='table' />
+        <cols>
+          <map key='[Document Index (generated)]' value='[daikibo-telemetry-data.json].[Document Index (generated)]' />
+          <map key='[area]' value='[daikibo-telemetry-data.json].[location.area]' />
+          <map key='[city]' value='[daikibo-telemetry-data.json].[location.city]' />
+          <map key='[country]' value='[daikibo-telemetry-data.json].[location.country]' />
+          <map key='[deviceID]' value='[daikibo-telemetry-data.json].[deviceID]' />
+          <map key='[deviceType]' value='[daikibo-telemetry-data.json].[deviceType]' />
+          <map key='[factory]' value='[daikibo-telemetry-data.json].[location.factory]' />
+          <map key='[section]' value='[daikibo-telemetry-data.json].[location.section]' />
+          <map key='[status]' value='[daikibo-telemetry-data.json].[data.status]' />
+          <map key='[temperature]' value='[daikibo-telemetry-data.json].[data.temperature]' />
+          <map key='[timestamp]' value='[daikibo-telemetry-data.json].[timestamp]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>Document Index (generated)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Document Index (generated)]</local-name>
+            <parent-name>[daikibo-telemetry-data.json]</parent-name>
+            <remote-alias>Document Index (generated)</remote-alias>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[daikibo-telemetry-data.json_B193E50740AF467C91256C8D12ACC83B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>data.status</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[status]</local-name>
+            <parent-name>[daikibo-telemetry-data.json]</parent-name>
+            <remote-alias>data.status</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[daikibo-telemetry-data.json_B193E50740AF467C91256C8D12ACC83B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>data.temperature</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[temperature]</local-name>
+            <parent-name>[daikibo-telemetry-data.json]</parent-name>
+            <remote-alias>data.temperature</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[daikibo-telemetry-data.json_B193E50740AF467C91256C8D12ACC83B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>deviceID</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[deviceID]</local-name>
+            <parent-name>[daikibo-telemetry-data.json]</parent-name>
+            <remote-alias>deviceID</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[daikibo-telemetry-data.json_B193E50740AF467C91256C8D12ACC83B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>deviceType</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[deviceType]</local-name>
+            <parent-name>[daikibo-telemetry-data.json]</parent-name>
+            <remote-alias>deviceType</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[daikibo-telemetry-data.json_B193E50740AF467C91256C8D12ACC83B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>location.area</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[area]</local-name>
+            <parent-name>[daikibo-telemetry-data.json]</parent-name>
+            <remote-alias>location.area</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[daikibo-telemetry-data.json_B193E50740AF467C91256C8D12ACC83B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>location.city</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[city]</local-name>
+            <parent-name>[daikibo-telemetry-data.json]</parent-name>
+            <remote-alias>location.city</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[daikibo-telemetry-data.json_B193E50740AF467C91256C8D12ACC83B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>location.country</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[country]</local-name>
+            <parent-name>[daikibo-telemetry-data.json]</parent-name>
+            <remote-alias>location.country</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[daikibo-telemetry-data.json_B193E50740AF467C91256C8D12ACC83B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>location.factory</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[factory]</local-name>
+            <parent-name>[daikibo-telemetry-data.json]</parent-name>
+            <remote-alias>location.factory</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[daikibo-telemetry-data.json_B193E50740AF467C91256C8D12ACC83B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>location.section</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[section]</local-name>
+            <parent-name>[daikibo-telemetry-data.json]</parent-name>
+            <remote-alias>location.section</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[daikibo-telemetry-data.json_B193E50740AF467C91256C8D12ACC83B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>timestamp</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[timestamp]</local-name>
+            <parent-name>[daikibo-telemetry-data.json]</parent-name>
+            <remote-alias>timestamp</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[daikibo-telemetry-data.json_B193E50740AF467C91256C8D12ACC83B]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Unhealthy' datatype='integer' name='[Calculation_1145716364062721]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF[status]=&quot;unhealthy&quot; THEN 10 ELSE 0 END' />
+      </column>
+      <column aggregation='Sum' datatype='integer' name='[Document Index (generated)]' role='dimension' type='ordinal'>
+        <desc>
+          <formatted-text>
+            <run>Document Index (generated)</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='daikibo-telemetry-data.json' datatype='table' name='[__tableau_internal_object_id__].[daikibo-telemetry-data.json_B193E50740AF467C91256C8D12ACC83B]' role='measure' type='quantitative' />
+      <column caption='Area' datatype='string' name='[area]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>location.area</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='City' datatype='string' name='[city]' role='dimension' semantic-role='[City].[Name]' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>location.city</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>location.country</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Device ID' datatype='string' name='[deviceID]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>deviceID</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Device Type' datatype='string' name='[deviceType]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>deviceType</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Factory' datatype='string' name='[factory]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>location.factory</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Section' datatype='string' name='[section]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>location.section</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Status' datatype='string' name='[status]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>data.status</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Temperature' datatype='real' name='[temperature]' role='measure' type='quantitative'>
+        <desc>
+          <formatted-text>
+            <run>data.temperature</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Timestamp' datatype='real' name='[timestamp]' role='measure' type='quantitative'>
+        <desc>
+          <formatted-text>
+            <run>timestamp</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <group caption='Action (Factory)' hidden='true' name='[Action (Factory)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[factory]' />
+        </groupfilter>
+      </group>
+      <folders-common>
+        <folder name='Daikibo-Telemetry-Data'>
+          <folder-item name='[Document Index (generated)]' type='field' />
+          <folder-item name='[deviceID]' type='field' />
+          <folder-item name='[deviceType]' type='field' />
+        </folder>
+        <folder name='Data'>
+          <folder-item name='[status]' type='field' />
+        </folder>
+        <folder name='Location'>
+          <folder-item name='[area]' type='field' />
+          <folder-item name='[city]' type='field' />
+          <folder-item name='[country]' type='field' />
+          <folder-item name='[factory]' type='field' />
+          <folder-item name='[section]' type='field' />
+        </folder>
+      </folders-common>
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_GB' class='hyper' dbname='C:/Users/User/AppData/Local/Temp/TableauTemp/#TableauTemp_1a9sgmf0lk7csj10jurg112hg0e5.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='01/07/2026 07:36:45 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <cols>
+            <map key='[Document Index (generated)]' value='[Extract].[Document Index (generated)]' />
+            <map key='[area]' value='[Extract].[location.area]' />
+            <map key='[city]' value='[Extract].[location.city]' />
+            <map key='[country]' value='[Extract].[location.country]' />
+            <map key='[deviceID]' value='[Extract].[deviceID]' />
+            <map key='[deviceType]' value='[Extract].[deviceType]' />
+            <map key='[factory]' value='[Extract].[location.factory]' />
+            <map key='[section]' value='[Extract].[location.section]' />
+            <map key='[status]' value='[Extract].[data.status]' />
+            <map key='[temperature]' value='[Extract].[data.temperature]' />
+            <map key='[timestamp]' value='[Extract].[timestamp]' />
+          </cols>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Document Index (generated)</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Document Index (generated)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Document Index (generated)</remote-alias>
+              <ordinal>0</ordinal>
+              <family>daikibo-telemetry-data.json</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>160704</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[daikibo-telemetry-data.json_B193E50740AF467C91256C8D12ACC83B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>data.status</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[status]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>data.status</remote-alias>
+              <ordinal>1</ordinal>
+              <family>daikibo-telemetry-data.json</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <object-id>[daikibo-telemetry-data.json_B193E50740AF467C91256C8D12ACC83B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>data.temperature</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[temperature]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>data.temperature</remote-alias>
+              <ordinal>2</ordinal>
+              <family>daikibo-telemetry-data.json</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[daikibo-telemetry-data.json_B193E50740AF467C91256C8D12ACC83B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>deviceID</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[deviceID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>deviceID</remote-alias>
+              <ordinal>3</ordinal>
+              <family>daikibo-telemetry-data.json</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>36</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <object-id>[daikibo-telemetry-data.json_B193E50740AF467C91256C8D12ACC83B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>deviceType</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[deviceType]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>deviceType</remote-alias>
+              <ordinal>4</ordinal>
+              <family>daikibo-telemetry-data.json</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <object-id>[daikibo-telemetry-data.json_B193E50740AF467C91256C8D12ACC83B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>location.area</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[area]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>location.area</remote-alias>
+              <ordinal>5</ordinal>
+              <family>daikibo-telemetry-data.json</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <object-id>[daikibo-telemetry-data.json_B193E50740AF467C91256C8D12ACC83B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>location.city</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[city]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>location.city</remote-alias>
+              <ordinal>6</ordinal>
+              <family>daikibo-telemetry-data.json</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <object-id>[daikibo-telemetry-data.json_B193E50740AF467C91256C8D12ACC83B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>location.country</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[country]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>location.country</remote-alias>
+              <ordinal>7</ordinal>
+              <family>daikibo-telemetry-data.json</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <object-id>[daikibo-telemetry-data.json_B193E50740AF467C91256C8D12ACC83B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>location.factory</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[factory]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>location.factory</remote-alias>
+              <ordinal>8</ordinal>
+              <family>daikibo-telemetry-data.json</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <object-id>[daikibo-telemetry-data.json_B193E50740AF467C91256C8D12ACC83B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>location.section</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[section]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>location.section</remote-alias>
+              <ordinal>9</ordinal>
+              <family>daikibo-telemetry-data.json</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <object-id>[daikibo-telemetry-data.json_B193E50740AF467C91256C8D12ACC83B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>timestamp</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[timestamp]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>timestamp</remote-alias>
+              <ordinal>10</ordinal>
+              <family>daikibo-telemetry-data.json</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7100</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[daikibo-telemetry-data.json_B193E50740AF467C91256C8D12ACC83B]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' rowDisplayCount='100' show-structure='false' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;South Africa&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='daikibo-telemetry-data.json' id='daikibo-telemetry-data.json_B193E50740AF467C91256C8D12ACC83B'>
+            <properties context=''>
+              <relation connection='semistructpassivestore-direct.1qhe7cs1xhn0lt12nedqh1pt35fd' name='daikibo-telemetry-data.json' table='[daikibo-telemetry-data.json]' type='table' />
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <actions>
+    <action caption='Filter 1 (generated)' name='[Action1_7684271F6290448F8D0C8764C59C9C3F]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 1' type='sheet' worksheet='Sheet 1' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 1' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='daikibo-telemetry-data' name='federated.0mnown70djgvdd1e2y4h80dqchxz' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0mnown70djgvdd1e2y4h80dqchxz'>
+            <column caption='Unhealthy' datatype='integer' name='[Calculation_1145716364062721]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF[status]=&quot;unhealthy&quot; THEN 10 ELSE 0 END' />
+            </column>
+            <column caption='Factory' datatype='string' name='[factory]' role='dimension' type='nominal'>
+              <desc>
+                <formatted-text>
+                  <run>location.factory</run>
+                </formatted-text>
+              </desc>
+            </column>
+            <column-instance column='[factory]' derivation='None' name='[none:factory:nk]' pivot='key' type='nominal' />
+            <column caption='Status' datatype='string' name='[status]' role='dimension' type='nominal'>
+              <desc>
+                <formatted-text>
+                  <run>data.status</run>
+                </formatted-text>
+              </desc>
+            </column>
+            <column-instance column='[Calculation_1145716364062721]' derivation='Sum' name='[sum:Calculation_1145716364062721:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.0mnown70djgvdd1e2y4h80dqchxz].[none:factory:nk]' value='221' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0mnown70djgvdd1e2y4h80dqchxz].[sum:Calculation_1145716364062721:qk]</rows>
+        <cols>[federated.0mnown70djgvdd1e2y4h80dqchxz].[none:factory:nk]</cols>
+      </table>
+      <simple-id uuid='{3BCC63EF-8615-4644-A572-83FA028FA02C}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='daikibo-telemetry-data' name='federated.0mnown70djgvdd1e2y4h80dqchxz' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0mnown70djgvdd1e2y4h80dqchxz'>
+            <column caption='Unhealthy' datatype='integer' name='[Calculation_1145716364062721]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF[status]=&quot;unhealthy&quot; THEN 10 ELSE 0 END' />
+            </column>
+            <column caption='Device Type' datatype='string' name='[deviceType]' role='dimension' type='nominal'>
+              <desc>
+                <formatted-text>
+                  <run>deviceType</run>
+                </formatted-text>
+              </desc>
+            </column>
+            <column caption='Factory' datatype='string' name='[factory]' role='dimension' type='nominal'>
+              <desc>
+                <formatted-text>
+                  <run>location.factory</run>
+                </formatted-text>
+              </desc>
+            </column>
+            <column-instance column='[deviceType]' derivation='None' name='[none:deviceType:nk]' pivot='key' type='nominal' />
+            <column caption='Status' datatype='string' name='[status]' role='dimension' type='nominal'>
+              <desc>
+                <formatted-text>
+                  <run>data.status</run>
+                </formatted-text>
+              </desc>
+            </column>
+            <column-instance column='[Calculation_1145716364062721]' derivation='Sum' name='[sum:Calculation_1145716364062721:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0mnown70djgvdd1e2y4h80dqchxz].[Action (Factory)]'>
+            <groupfilter function='member' level='[factory]' member='&quot;daikibo-factory-seiko&quot;' user:ui-action-filter='[Action1_7684271F6290448F8D0C8764C59C9C3F]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0mnown70djgvdd1e2y4h80dqchxz].[Action (Factory)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.0mnown70djgvdd1e2y4h80dqchxz].[none:deviceType:nk]' value='98' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0mnown70djgvdd1e2y4h80dqchxz].[sum:Calculation_1145716364062721:qk]</rows>
+        <cols>[federated.0mnown70djgvdd1e2y4h80dqchxz].[none:deviceType:nk]</cols>
+      </table>
+      <simple-id uuid='{722D6B4C-DBA8-4520-AD3A-FF6D22284E8E}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' preset-index='1' sizing-mode='fixed' />
+      <zones>
+        <zone h='100000' id='8' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='51250' id='7' name='Sheet 1' w='98400' x='800' y='1000'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='46750' id='9' name='Sheet 2' w='98400' x='800' y='52250'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='11' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='10' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+                <zone fixed-size='280' h='51250' id='7' is-fixed='true' name='Sheet 1' w='98400' x='800' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='46750' id='9' is-fixed='true' name='Sheet 2' w='98400' x='800' y='52250'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{813111A4-B762-4F5D-90F9-8E6FB2991C93}' />
+    </dashboard>
+  </dashboards>
+  <windows saved-dpi-scale-factor='1.5' source-height='44'>
+    <window class='worksheet' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0mnown70djgvdd1e2y4h80dqchxz].[none:factory:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{40703ADF-FE72-40C1-A115-6F398F5DF455}' />
+    </window>
+    <window class='worksheet' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0mnown70djgvdd1e2y4h80dqchxz].[none:deviceType:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{9D4D30AA-9902-4A5A-95AB-6C8AC5443D90}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Sheet 1'>
+          <zoom type='entire-view' />
+          <selection-collection>
+            <tuple-selection>
+              <tuple-reference>
+                <tuple-descriptor>
+                  <pane-descriptor>
+                    <x-fields>
+                      <field>[federated.0mnown70djgvdd1e2y4h80dqchxz].[none:factory:nk]</field>
+                    </x-fields>
+                    <y-fields>
+                      <field>[federated.0mnown70djgvdd1e2y4h80dqchxz].[sum:Calculation_1145716364062721:qk]</field>
+                    </y-fields>
+                  </pane-descriptor>
+                  <columns>
+                    <field>[federated.0mnown70djgvdd1e2y4h80dqchxz].[none:factory:nk]</field>
+                    <field>[federated.0mnown70djgvdd1e2y4h80dqchxz].[sum:Calculation_1145716364062721:qk]</field>
+                  </columns>
+                </tuple-descriptor>
+                <tuple>
+                  <value>&quot;daikibo-factory-seiko&quot;</value>
+                  <value>480</value>
+                </tuple>
+              </tuple-reference>
+            </tuple-selection>
+          </selection-collection>
+        </viewpoint>
+        <viewpoint name='Sheet 2'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='7' />
+      <simple-id uuid='{75C624E7-11AE-48A5-81F0-64B62371EB9F}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Dashboard 1' width='192'>
+      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
+      TkSuQmCC
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+      06Y6CgAAAABJRU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 2' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
