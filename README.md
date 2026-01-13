@@ -13,3 +13,6 @@ Doing this program confirmed that I really enjoy working on technology problems 
 ## Tools used
 - Excel
 - Tableau
+
+## Completion Certificate
+<img width="1272" height="904" alt="image" src="https://github.com/user-attachments/assets/40097bca-6fa7-44ba-8e44-82b0d15f0e1b" />
